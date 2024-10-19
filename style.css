@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('fonts/HarmonyOS_Sans_Medium.ttf');
+}
+
+:root {
+    --bs-body-bg: #f9f9f9;
+
+    --bs-font-sans-serif: 'HarmonyOS Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .title {
+    font-family: 'HarmonyOS Sans' !important;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    box-shadow: 0px 7px 7px -5px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.app-content {
+    min-height: calc(100vh - 4rem - 2.5rem);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.card-box {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease;
+}
+
+.float-card-content {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1rem;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.float-card {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
+    height: 200px;
+    border-radius: 10px;
+
+    padding: 2rem;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.float-card:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.float-card-close {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    cursor: pointer;
+}
+
+.card-box:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #fff;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .h3, h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .h3, h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .h3, h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a.card-box {
+    text-decoration: none;
+}
+
+.container, .container * {
+    transition: all .3s ease;
+}
+
+span.animated-underline, a.animated-underline {
+    background: linear-gradient(to right, #888 0%, #888 100%) no-repeat right bottom;
+    background-size: 0 2px;
+    transition: background-size .3s ease;
+}
+
+span.animated-underline:hover , a.animated-underline:hover {
+    background-position-x: left;
+    background-size: 100% 2px;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+
+    margin-bottom: 1rem;
+}
