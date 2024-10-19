@@ -70,7 +70,17 @@ footer {
     min-width: 200px;
     min-height: 200px;
     border-radius: 5px;
-    transition: box-shadow .3s ease;
+    transition: border .3s ease;
+    /* box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #fff; */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+}
+
+.card-box:hover {
+    border: 2px solid #0009;
+}
+.card-box:active {
+    border: 2px solid transparent;
 }
 
 .float-card-content {
@@ -100,10 +110,6 @@ footer {
     top: .4rem;
     right: .4rem;
     cursor: pointer;
-}
-
-.card-box:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #fff;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
